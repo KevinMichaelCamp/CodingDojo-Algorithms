@@ -1,0 +1,1 @@
+/*Your function should accept an array.  If value at [0] is greater than the array's length, print "Too Big!!!"; if value at [0] is less than array's length, print "Too Small!!!"; otherwise print "Ahhhh...Just Right!!!".*/

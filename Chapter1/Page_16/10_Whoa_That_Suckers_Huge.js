@@ -1,5 +1,5 @@
-//Add odd integers from -300,000 to 300,000, console.log the final sum.
-//Is there a shortcut?
+/*Add odd integers from -300,000 to 300,000, console.log the final sum.
+Is there a shortcut?*/
 
 var sum = 0;
 
