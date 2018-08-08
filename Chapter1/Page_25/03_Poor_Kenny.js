@@ -1,0 +1,1 @@
+/*Kenny tries to stay safe, but somehow everyday something happens.  Out of the last 100 days, there were 10 days with volcanoes, 15 days with tsunamis, 20 with earthquakes, 25 blizzards, and 30 meteors(for 100 days total).  If these probabilities continue, write whatHappensToday() to print a day's outcome.*/
