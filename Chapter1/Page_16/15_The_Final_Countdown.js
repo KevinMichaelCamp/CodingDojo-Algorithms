@@ -30,5 +30,7 @@ function finalCount(param1, param2, param3, param4) {
 
 console.log('Test Case 1');
 finalCount(3, 5, 17, 9);
+console.log('********************');
 console.log('Test Case 2');
 finalCount(3, 52, 3, 12);
+console.log('********************');

@@ -1,3 +1,20 @@
-/*Create celsiusToFahreheit(cDegrees) that accepts number of degrees Celsius and returns the equivalent temperature expressed in Fahrenheit degrees.
+/*Create celsiusToFahreheit(cDegrees) that accepts number of degrees Celsius and returns the equivalent temperature expressed in Fahrenheit degrees.*/
 
-Optional: Do Fahrenheit and Celsius values equate at a certain number?  Scientific calculation can be complex, so for this challenge just try a series of Celsius integer values starting at 200, going downward (descending), checking whether it is equal to the correspondiong Fahrenheit value*/
+function celsiusToFahreheit(cDegrees) {
+  var fDegrees;
+
+  fDegrees = (9 / 5 * cDegrees) + 32;
+
+  console.log(cDegrees + '° Celsius is equal to ' + fDegrees + '° Fahrenheit.');
+}
+
+//Test Cases
+console.log('Test Case 1');
+celsiusToFahreheit(100);
+console.log('********************');
+console.log('Test Case 2');
+celsiusToFahreheit(32);
+console.log('********************');
+console.log('Test Case 3');
+celsiusToFahreheit(0);
+console.log('********************');

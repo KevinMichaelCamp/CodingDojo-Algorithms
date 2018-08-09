@@ -7,5 +7,7 @@ var temp = myName;
 var myName = myNumber;
 var myNumber = temp;
 
+
+//Test Code
 console.log(myNumber);
 console.log(myName);
