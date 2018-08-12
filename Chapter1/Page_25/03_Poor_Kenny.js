@@ -3,9 +3,8 @@
 function whatHappensToday() {
 
   //generate random number between 1-100
-  for (var i = 0; i <= 100; i++) {
-    var disaster = Math.floor((Math.random() * (101 - 1)) + 1);
-  }
+  var disaster = Math.floor((Math.random() * (101 - 1)) + 1);
+
 
   //Volcano
   if (disaster >= 1 && disaster <= 10) {
@@ -29,7 +28,12 @@ function whatHappensToday() {
   }
 }
 
-//Test run 50 times
-for (var i = 0; i < 50; i++) {
+//Test run
+console.log('FORCAST FOR TODAY -');
+whatHappensToday();
+
+//Test run 100 times
+for (var i = 0; i < 100; i++) {
+  console.log('FORCAST FOR TODAY -');
   whatHappensToday();
 }
