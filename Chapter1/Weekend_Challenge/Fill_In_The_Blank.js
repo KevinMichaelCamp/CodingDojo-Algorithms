@@ -1,5 +1,75 @@
 /*Challenge: Create a fill-in-the-blank quiz game.  Ask the user's name, then refer to the user by name as you ask him/her a series of questions that you have stored in an array.  Use the prompt() function to get each input from the user and compare it to the answer you expected.  When the user enters "Q" (for quit), or perhaps when the user hits [Cancel], exit the game and print the statistics of the game to the console: user name, number of questions answered, number of questions correct, number of questions incorrect, percentage correct.*/
 
-function prompt(){
+//FILL-IN-THE-BLANK GAME
 
+//Variables
+var userName;
+var answers = [32, 'blue', 27, 'nice belt', 3];
+var correct = 0;
+var incorrect = 0;
+var percent = 0;
+
+//Get Username
+alert('Hi there! Welcome to the fill in the blank game!!!');
+userName = prompt('Please enter your name...', 'John Wick');
+
+//Question 1
+alert('Hey ' + userName + "!!! Sup? Let's play a game.");
+var answer1 = prompt("Question 1 - What is 0° Celcius expressed in ° Fahrenheit?", 0);
+if (answer1 == answers[0]) {
+  correct++;
+  alert('Yup! You got it right, ' + userName + '. 0° Celsius is equal to 32° Fahrenheit.');
+} else {
+  incorrect++;
+  alert('Nope. Wrongo ' + userName + '.  0° Celsius is equal to 32° Fahrenheit.');
 }
+
+//Question 2
+var answer2 = prompt("Question 2 - What color is the sky?");
+if (answer2 == answers[1]) {
+  correct++;
+  alert("Heck yea, " + userName + "!  Sky be blue!");
+} else {
+  incorrect++;
+  alert("What? Look up.  The sky is blue, yo!");
+}
+
+//Question 3
+var answer3 = prompt("Question 3 - What integer does the Roman numeral 'XXVII' represent?");
+if (answer3 == answers[2]) {
+  correct++;
+  alert("Carpe diem, " + userName + "!  'XXVII' equals 27");
+} else {
+  incorrect++;
+  alert("E tu, Brute? Wrong dude, 'XXVII' equals 27");
+}
+
+//Question 4
+var answer4 = prompt("Question 4 - What did the Zero(0) say to the Eight(8)?");
+if (answer4 == answers[3]) {
+  correct++;
+  alert('HAHAHA! Nice belt! Funny guy.');
+} else {
+  incorrect++;
+  alert("Where's your sense of humor, " + userName + "?  The answer is 'Nice Belt!'");
+}
+
+//Question 5
+var answer5 = prompt("Quetion 5 - Last one... How many licks does it take to get to the toosie roll center of a tootsie pop?");
+if (answer5 == answers[4]) {
+  correct++;
+  alert("Threeee. Yuppo " + userName + "!");
+} else {
+  incorrect++;
+  alert("No way. The answer is 3. Threee licks.")
+}
+
+//Display Results
+percent = (correct / 5) * 100;
+
+alert(userName + "... You got " + correct + " correct and " + incorrect + " wrong. --- " + percent + "%.");
+
+//log results
+console.log('Correct - ' + correct);
+console.log('Incorrect - ' + incorrect);
+console.log('Percent - ' + percent);
