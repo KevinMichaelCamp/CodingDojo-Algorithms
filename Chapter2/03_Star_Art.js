@@ -67,3 +67,36 @@ console.log("Test Case 3");
 var num3 = 7;
 drawRightStars(num3);
 console.log("--------------------");
+
+//Part Three - drawCenteredStars
+function drawCenteredStars(num){
+  var string = "";
+  var spaces = (75 - num);
+
+  for(var i = 0; i < (spaces / 2); i ++){
+    string = string + ' ';
+  }
+
+  for(var j = 0; j < num; j++){
+    string = string + '*';
+  }
+
+  for(var n = 0; n < (spaces / 2); n ++){
+    string = string + ' ';
+  }
+
+  console.log(string);
+}
+
+console.log("Test Case 1");
+var num1 = 25;
+drawCenteredStars(num1);
+console.log("--------------------");
+console.log("Test Case 2");
+var num2 = 75;
+drawCenteredStars(num2);
+console.log("--------------------");
+console.log("Test Case 3");
+var num3 = 7;
+drawCenteredStars(num3);
+console.log("--------------------");
