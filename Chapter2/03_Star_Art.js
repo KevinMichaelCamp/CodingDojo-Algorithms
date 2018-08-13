@@ -5,3 +5,65 @@
 - Write a function drawRightStars(num) that prints 75 characters total.  Stars should build from the right side.  The num characters should be asterisks, the other (75 - num) should be spaces.
 
 - Write a function drawCenteredStars(num) that prints 75 characters total.  Thes stars should be centered in the field of 75 characters.  The num characters should be asterisks, the other (75 - num) should be spaces. */
+
+//Part One - drawLeftStars
+function drawLeftStars(num){
+
+  var string = '';
+
+  //Build * string
+  for(var i = 0; i < num; i ++){
+    string = string + '*';
+  }
+
+  //log string
+  console.log(string);
+}
+
+//Test Cases
+console.log("Test Case 1");
+var num1 = 25;
+drawLeftStars(num1);
+console.log("--------------------");
+console.log("Test Case 2");
+var num2 = 75;
+drawLeftStars(num2);
+console.log("--------------------");
+console.log("Test Case 3");
+var num3 = 7;
+drawLeftStars(num3);
+console.log("--------------------");
+
+
+//Part Two - drawRightStars
+function drawRightStars(num){
+
+  var string = '';
+  var spaces = (75 - num);
+
+  //Build spaces string
+  for(var i = 0; i < spaces; i ++){
+    string = string + ' ';
+  }
+  //Add stars to string
+  for(var j = 0; j < num; j ++){
+    string = string + '*';
+  }
+
+  //Log string
+  console.log(string);
+}
+
+//Test Cases
+console.log("Test Case 1");
+var num1 = 25;
+drawRightStars(num1);
+console.log("--------------------");
+console.log("Test Case 2");
+var num2 = 75;
+drawRightStars(num2);
+console.log("--------------------");
+console.log("Test Case 3");
+var num3 = 7;
+drawRightStars(num3);
+console.log("--------------------");
