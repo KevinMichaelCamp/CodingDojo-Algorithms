@@ -1,0 +1,1 @@
+/* Return whether a given number is prime.  Prime numbers are only divisible by themselves and 1.  Many highly optimized solutions exist, but for now just create one that is easy to understand and debug. */
