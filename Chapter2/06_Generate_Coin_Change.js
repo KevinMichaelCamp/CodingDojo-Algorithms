@@ -8,3 +8,72 @@ Example output:
   pennies:    4
 
 - Add half-dollar (50 cents) and dollar (100 cents) coins using only 40 additional characters or less. */
+
+function generateCoinChange(cents) {
+
+  var money = cents;
+  var dol;
+  var hd;
+  var q;
+  var d;
+  var n;
+  var p;
+
+  if (cents >= 100) {
+    dol = Math.floor(money / 100);
+    money = money % 100;
+  }
+  if (money >= 50) {
+    hd = Math.floor(money / 50);
+    money = money % 50;
+  }
+  if (money >= 25) {
+    q = Math.floor(money / 25);
+    money = money % 25;
+  }
+  if (money >= 10) {
+    d = Math.floor(money / 10);
+    money = money % 10;
+  }
+  if (money >= 5) {
+    n = Math.floor(money / 5);
+    money = money % 5;
+  }
+  if (money >= 1) {
+    p = money;
+  }
+
+  //create table
+  var dollars = {
+    name: "dollars",
+    quantity: dol
+  };
+  var halfDollars = {
+    name: "Half-Dollars",
+    quantity: hd
+  };
+  var quarters = {
+    name: "quarters",
+    quantity: q
+  };
+  var dimes = {
+    name: "dimes",
+    quantity: d
+  };
+  var nickels = {
+    name: "nickels",
+    quantity: n
+  };
+  var pennies = {
+    name: "pennies",
+    quantity: p
+  };
+
+  console.log(cents + " cents can be broken into:");
+  console.table([dollars, halfDollars, quarters, dimes, nickels, pennies]);
+}
+
+//Test Cases
+console.log("Test Case 1");
+console.log("******************");
+generateCoinChange(524);
