@@ -76,4 +76,4 @@ function generateCoinChange(cents) {
 //Test Cases
 console.log("Test Case 1");
 console.log("******************");
-generateCoinChange(524);
+generateCoinChange(3297);
