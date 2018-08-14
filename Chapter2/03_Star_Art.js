@@ -7,12 +7,12 @@
 - Write a function drawCenteredStars(num) that prints 75 characters total.  Thes stars should be centered in the field of 75 characters.  The num characters should be asterisks, the other (75 - num) should be spaces. */
 
 //Part One - drawLeftStars
-function drawLeftStars(num){
+function drawLeftStars(num) {
 
   var string = '';
 
   //Build * string
-  for(var i = 0; i < num; i ++){
+  for (var i = 0; i < num; i++) {
     string = string + '*';
   }
 
@@ -36,17 +36,17 @@ console.log("--------------------");
 
 
 //Part Two - drawRightStars
-function drawRightStars(num){
+function drawRightStars(num) {
 
   var string = '';
   var spaces = (75 - num);
 
   //Build spaces string
-  for(var i = 0; i < spaces; i ++){
+  for (var i = 0; i < spaces; i++) {
     string = string + ' ';
   }
   //Add stars to string
-  for(var j = 0; j < num; j ++){
+  for (var j = 0; j < num; j++) {
     string = string + '*';
   }
 
@@ -69,19 +69,19 @@ drawRightStars(num3);
 console.log("--------------------");
 
 //Part Three - drawCenteredStars
-function drawCenteredStars(num){
+function drawCenteredStars(num) {
   var string = "";
   var spaces = (75 - num);
 
-  for(var i = 0; i < (spaces / 2); i ++){
+  for (var i = 0; i < (spaces / 2); i++) {
     string = string + ' ';
   }
 
-  for(var j = 0; j < num; j++){
+  for (var j = 0; j < num; j++) {
     string = string + '*';
   }
 
-  for(var n = 0; n < (spaces / 2); n ++){
+  for (var n = 0; n < (spaces / 2); n++) {
     string = string + ' ';
   }
 

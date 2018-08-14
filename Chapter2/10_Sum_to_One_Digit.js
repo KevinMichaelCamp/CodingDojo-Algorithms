@@ -1,5 +1,4 @@
-NEEDS FIXIN
-
+FIX ME PLEASE
 /* Kailin sees beauty in numbers, but also believes that less is more.  Implement sumToOne(num) that sums a given integer's digits repeatedly until the sum is only one digit.  Return that one-digit result.  Example: sumToOne(938) returns 1, because 9 + 2 + 8 = 19, then 1 + 9 = 10, then 1 + 0 = 1. */
 
 function sumToOne(num){
@@ -9,11 +8,15 @@ function sumToOne(num){
   var numArray = [];
   var sum = 0;
 
+  //push string integers into array
+  for(var i = 0; i < numString.length; i ++){
+    numArray.push(Number(numString[i]));
+  }
+
   //Run while loop until numArray.length = 1
-  while(numArray.length !== 0){
-    for(var i = 0; i < numString.length; i ++){
-      numArray.push(Number(numString[i]));
-      sum = sum + numArray[i];
+  while(numArray.length > 1){
+    for(var j = 0; j <= numArray.length; j ++){
+      sum = sum + numArray[j];
     }
   }
 

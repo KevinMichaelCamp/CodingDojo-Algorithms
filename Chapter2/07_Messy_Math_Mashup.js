@@ -1,4 +1,3 @@
-
 /* Create a function messyMath(num) that will return the following sum: add all integers from 0 up to the given num, except for the following special cases of our count value:
 
 1. If current count (not num) is evenly divisible by 3, don't add to sum; skip to the next count.
@@ -9,30 +8,22 @@
 
 Example: If given number is 4, return 7.  If given number is 8, return 34.  If given number is 15, return -1. */
 
-function messyMath(num){
+function messyMath(num) {
 
   var sum = 0;
-  var count = 0;
 
-  for(var i = 0; i <= num; i ++){
-    if((count / 3) == num){
-      console.log(count, sum);
-      console.log(-1);
-      return -1;
-    }
-    if(count % 3 == 0){
-      count ++;
-      console.log(count, sum);
-    }
-    else if(count % 7 == 0){
-      sum = sum + (i * 2);
-      count ++;
-      console.log(count, sum);
-    }
-    else{
-      sum = sum + i;
-      count ++;
-      console.log(count, sum);
+  for (var count = 0; count <= num; count++) {
+
+    if (count % 3 === 0) {
+      sum += 0;
+    } else if (count % 7 === 0) {
+      sum = sum + (count * 2);
+    } else {
+      if (count === (num / 3)) {
+        console.log(-1);
+        return -1;
+      }
+      sum = sum + count;
     }
   }
   console.log("The messy math sum of " + count + " numbers is " + sum + ".");

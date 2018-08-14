@@ -4,15 +4,15 @@ Second: Create betterThreeFives(start, end) that allows you to enter arbitrary s
 
 //First function:
 
-function threesFives(){
+function threesFives() {
 
   var sum = 0;
 
-  for(var i = 100; i <= 4000000; i ++){
-    if(i % 3 == 0 && i % 5 == 0){
+  for (var i = 100; i <= 4000000; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
       continue;
     }
-    if(i % 3 == 0 || i % 5 == 0){
+    if (i % 3 == 0 || i % 5 == 0) {
       sum = sum + i;
     }
   }
@@ -24,15 +24,15 @@ threesFives();
 
 //Second function:
 
-function threesFives(start, end){
+function threesFives(start, end) {
 
   var sum = 0;
 
-  for(var i = start; i <= end; i ++){
-    if(i % 3 == 0 && i % 5 == 0){
+  for (var i = start; i <= end; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
       continue;
     }
-    if(i % 3 == 0 || i % 5 == 0){
+    if (i % 3 == 0 || i % 5 == 0) {
       sum = sum + i;
     }
   }
