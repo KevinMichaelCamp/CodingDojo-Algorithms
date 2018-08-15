@@ -10,4 +10,4 @@
 
 5. Fifth, copy playStatistics2() and add code to it to make playStatistics3(num), so that it will roll as many times as you want, instead of always doing this eight times.
 
-6. Finally, make a copy of play playStatistics3 and change it to create playStatistics4(num), so that at the end instead of total sum, it prints the average roll.
+6. Finally, make a copy of play playStatistics3 and change it to create playStatistics4(num), so that at the end instead of total sum, it prints the average roll. */
