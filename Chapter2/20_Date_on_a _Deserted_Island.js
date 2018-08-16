@@ -10,4 +10,4 @@
 
 5. Now expand monthName() to create monthToDays(monthNum), returning the number of days in the month, in the year 2019.  HINT: use a SWITCH statement for the days in each month.
 
-6.
+6. Despit using his ember expertise to create a glowing SOS visible from space, the days go by and sadly Eduardo is still not rescued.  Is it spring yet?  It might as well be.  Build on monthName() to create dayToMonth(dayNum).  If a given day number since the year began, return the current month (assume it is NOT a leap year).  Given 75, return "March".
