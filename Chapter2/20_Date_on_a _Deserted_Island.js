@@ -4,4 +4,10 @@
 
 2. Expand weekdayName() to create weekdayName2(dayNum) accepting numbers up to 365.  Return weekday as before, given number of days total.  "Sunday" still corresponds to 1.
 
-3. 
+3. Create a new function someDays() that calls weekdayName2() seventeen times, with randomly generated integers as high 365.  Log each result string.  If it is a weekday, add the phrase "Work hard!!!", and if it is a weekend day, add "Enjoy your day off!!!".
+
+4. Build function monthName(monthNum) that, given a number from 1 to 12, returns a string containing the month for that number ("May" corresponds to 5).  Use an array, without loops.
+
+5. Now expand monthName() to create monthToDays(monthNum), returning the number of days in the month, in the year 2019.  HINT: use a SWITCH statement for the days in each month.
+
+6.
