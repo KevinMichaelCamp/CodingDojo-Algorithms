@@ -3,3 +3,34 @@
 Second: handle negative digitNumber values, where -1 represents tenths digit (0.x), -2 represents hundreths digit (0.0x), etc. Given (123.45, -1) return 4.  Given (123.45, -2) return 5.
 
 Third: handle negative num values as well, doing what you think is appropriate */
+
+function extractDigit(num, digitNum){
+  var numString = num.toFixed();
+  var stringDig;
+  var number;
+
+  if(digitNum >= 1){
+    stringDig = numString[digitNum - 1];
+  }
+  else{
+    stringDig =
+  }
+
+  number = Number(stringDig);
+
+  console.log("Digit number " + digitNum + " of " + num + " is " + number + ".");
+}
+
+//Test Case #1
+
+console.log("Test Case 1");
+var num1 = 1824;
+var digitNum1 = 2;
+extractDigit(num1, digitNum1);
+console.log("*******************");
+
+console.log("Test Case 1");
+console.log("*******************");
+
+console.log("Test Case 1");
+console.log("*******************");
