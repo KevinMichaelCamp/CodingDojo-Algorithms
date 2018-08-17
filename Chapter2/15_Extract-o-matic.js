@@ -4,16 +4,22 @@ Second: handle negative digitNumber values, where -1 represents tenths digit (0.
 
 Third: handle negative num values as well, doing what you think is appropriate */
 
-function extractDigit(num, digitNum){
-  var numString = num.toFixed();
+function extractDigit(num, digitNum) {
+  var numString = num.toFixed(2);
+  var absDig = Math.abs(digitNum);
+  var decInd;
   var stringDig;
   var number;
 
-  if(digitNum >= 1){
+  if (digitNum >= 1) {
     stringDig = numString[digitNum - 1];
-  }
-  else{
-    stringDig =
+  } else if (digitNum < 0) {
+    for (var i = 0; i < numString.length; i++) {
+      if(numString[i] == "."){
+        decInd = i;
+      }
+    }
+    stringDig = numString[(absDig + i) - 1];
   }
 
   number = Number(stringDig);
@@ -29,7 +35,10 @@ var digitNum1 = 2;
 extractDigit(num1, digitNum1);
 console.log("*******************");
 
-console.log("Test Case 1");
+console.log("Test Case 2");
+var num2 = 123.45;
+var digitNum2 = -2;
+extractDigit(num2, digitNum2);
 console.log("*******************");
 
 console.log("Test Case 1");
