@@ -13,7 +13,7 @@
 6. Finally, make a copy of play playStatistics3 and change it to create playStatistics4(num), so that at the end instead of total sum, it prints the average roll. */
 
 //Part 1
-function rollOne(){
+function rollOne() {
   var roll = Math.trunc(Math.random() * (6 - 1 + 1) + 1);
   // console.log("You have rolled a " + roll + ".");
   // if(roll == 5){
@@ -23,8 +23,8 @@ function rollOne(){
 }
 
 //Part 2
-function playFives(num){
-  for(var i = 1; i <= num; i ++){
+function playFives(num) {
+  for (var i = 1; i <= num; i++) {
     console.log("Roll # " + i);
     rollOne();
   }
@@ -34,16 +34,16 @@ function playFives(num){
 // playFives(100);
 
 //Part 3
-function playStatistics(){
+function playStatistics() {
   var min = 6;
   var max = 1;
 
-  for(var i = 1; i <= 8; i ++){
+  for (var i = 1; i <= 8; i++) {
     var roll = rollOne();
-    if(roll < min){
+    if (roll < min) {
       min = roll;
     }
-    if(roll > max){
+    if (roll > max) {
       max = roll;
     }
   }
@@ -55,18 +55,18 @@ function playStatistics(){
 // playStatistics();
 
 //Part 4
-function playStatistics2(){
+function playStatistics2() {
   var min = 6;
   var max = 1;
   var total = 0;
 
-  for(var i = 1; i <= 8; i ++){
+  for (var i = 1; i <= 8; i++) {
     var roll = rollOne();
     total = total + roll;
-    if(roll < min){
+    if (roll < min) {
       min = roll;
     }
-    if(roll > max){
+    if (roll > max) {
       max = roll;
     }
   }
@@ -79,19 +79,19 @@ function playStatistics2(){
 // playStatistics2();
 
 //Part 5
-function playStatistics3(num){
+function playStatistics3(num) {
   var min = 6;
   var max = 1;
   var total = 0;
 
-  for(var i = 1; i <= num; i ++){
+  for (var i = 1; i <= num; i++) {
     var roll = rollOne();
     console.log(roll);
     total = total + roll;
-    if(roll < min){
+    if (roll < min) {
       min = roll;
     }
-    if(roll > max){
+    if (roll > max) {
       max = roll;
     }
   }
@@ -117,39 +117,42 @@ function playStatistics3(num){
 // console.log("********************");
 
 //Part 6
-function playStatistics3(num){
+function playStatistics4(num) {
   var min = 6;
   var max = 1;
   var total = 0;
+  var average;
 
-  for(var i = 1; i <= num; i ++){
+  for (var i = 1; i <= num; i++) {
     var roll = rollOne();
     console.log(roll);
     total = total + roll;
-    if(roll < min){
+    average = total / num;
+    if (roll < min) {
       min = roll;
     }
-    if(roll > max){
+    if (roll > max) {
       max = roll;
     }
   }
   //Log results
   console.log("Out of " + num + " rolls, the minimum roll was " + min + " and the maximum roll was " + max + ".");
   console.log("The total sum of all rolls is " + total + ".");
+  console.log("The average roll of all rolls is " + average) + ".";
 }
 
 //Test Case
 console.log("Test Case 1");
 var num1 = 11;
-playStatistics3(num1);
+playStatistics4(num1);
 console.log("********************");
 
 console.log("Test Case 2");
 var num2 = 47;
-playStatistics3(num2);
+playStatistics4(num2);
 console.log("********************");
 
 console.log("Test Case 3");
 var num3 = 100000;
-playStatistics3(num3);
+playStatistics4(num3);
 console.log("********************");
