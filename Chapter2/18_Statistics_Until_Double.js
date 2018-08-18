@@ -2,12 +2,26 @@
 
 function twentySidedDie() {
   var roll;
+  var previousRoll = 0;
+  var numRolls = 0;
+  var min = 20;
+  var max = 1;
 
-  roll = Math.trunc(Math.random() * (20 - 1 + 1) + 1);
-  console.log(roll);
+  while(roll !== previousRoll){
+    previousRoll = roll;
+    roll = Math.trunc(Math.random() * (20 - 1 + 1) + 1);
+
+    if(roll < min){
+      min = roll;
+    }
+    if(roll > max){
+      max = roll;
+    }
+    console.log(roll);
+    console.log();
+  }
 }
 
 //Test Case
-for (var i = 1; i <= 100; i++) {
-  twentySidedDie();
-}
+
+twentySidedDie();
