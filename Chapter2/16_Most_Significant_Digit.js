@@ -1,3 +1,5 @@
+// ***** VERY Challenging Algorithm *****
+
 /* If you already know who Ada Lovelace is, that's great!  She is significant.
   (from Wiki) Augusta Ada King-Noel, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and published the first algorithm intended to be carried out by such a machine. As a result, she is sometimes regarded as the first to recognise the full potential of a "computing machine" and the first computer programmer.
 
