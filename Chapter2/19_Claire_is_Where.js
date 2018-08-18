@@ -3,37 +3,40 @@
 Second: Create function distFromHome().  Assuming she moves diagonally, reutrn her distance from home. */
 
 
-function claireIsWhere(){
+function claireIsWhere() {
   var x;
   var y;
 
-  function reset(){
+  function reset() {
     x = 0;
     y = 0;
   }
 
-  function moveBy(xOffset, yOffset){
+  function moveBy(xOffset, yOffset) {
     x = x + xOffset;
     y = y + yOffset;
   }
 
-  function xlocation(){
+  function xLocation() {
     return x;
   }
 
-  function ylocation(){
+  function yLocation() {
     return y;
   }
 
-  reset();
-  moveBy(1,-2);
-  moveBy(3,1);
+  function distFromHome() {
+    var distance = Math.sqrt(Math.pow(xLocation(), 2) + Math.pow(yLocation(), 2))
+    return distance;
+  }
 
-  x = xLocation;
-  y = yLocation
+  reset();
+  moveBy(1, -2);
+  moveBy(3, 1);
 
   //log results
   console.log("Claire is located at x = " + xLocation() + ", y = " + yLocation() + ".");
+  console.log("Claire's distance from home is " + distFromHome() + ".");
 }
 
 
