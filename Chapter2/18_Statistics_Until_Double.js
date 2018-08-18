@@ -6,10 +6,17 @@ function twentySidedDie() {
   var numRolls = 0;
   var min = 20;
   var max = 1;
+  var total = 0;
+  var average;
 
   while (roll !== previousRoll) {
     previousRoll = roll;
     roll = Math.trunc(Math.random() * (20 - 1 + 1) + 1);
+
+    numRolls++;
+    total = total + roll;
+    average = Math.round(total / numRolls);
+
 
     if (roll < min) {
       min = roll;
@@ -18,12 +25,16 @@ function twentySidedDie() {
       max = roll;
     }
     console.log(roll);
-    console.log();
   }
+
+  //Log Results
+  console.log("You rolled " + numRolls + " times.");
+  console.log("The minimum roll was " + min + '.');
+  console.log("The maximum roll was " + max + '.');
+  console.log("The total for all rolls was " + total + ".");
+  console.log("Your average roll was " + average + ".");
 }
 
 //Test Case
 
 twentySidedDie();
-
-//
