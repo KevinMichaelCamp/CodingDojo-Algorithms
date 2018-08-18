@@ -7,14 +7,14 @@ function twentySidedDie() {
   var min = 20;
   var max = 1;
 
-  while(roll !== previousRoll){
+  while (roll !== previousRoll) {
     previousRoll = roll;
     roll = Math.trunc(Math.random() * (20 - 1 + 1) + 1);
 
-    if(roll < min){
+    if (roll < min) {
       min = roll;
     }
-    if(roll > max){
+    if (roll > max) {
       max = roll;
     }
     console.log(roll);
@@ -25,3 +25,5 @@ function twentySidedDie() {
 //Test Case
 
 twentySidedDie();
+
+//
