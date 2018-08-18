@@ -117,3 +117,39 @@ function playStatistics3(num){
 // console.log("********************");
 
 //Part 6
+function playStatistics3(num){
+  var min = 6;
+  var max = 1;
+  var total = 0;
+
+  for(var i = 1; i <= num; i ++){
+    var roll = rollOne();
+    console.log(roll);
+    total = total + roll;
+    if(roll < min){
+      min = roll;
+    }
+    if(roll > max){
+      max = roll;
+    }
+  }
+  //Log results
+  console.log("Out of " + num + " rolls, the minimum roll was " + min + " and the maximum roll was " + max + ".");
+  console.log("The total sum of all rolls is " + total + ".");
+}
+
+//Test Case
+console.log("Test Case 1");
+var num1 = 11;
+playStatistics3(num1);
+console.log("********************");
+
+console.log("Test Case 2");
+var num2 = 47;
+playStatistics3(num2);
+console.log("********************");
+
+console.log("Test Case 3");
+var num3 = 100000;
+playStatistics3(num3);
+console.log("********************");
