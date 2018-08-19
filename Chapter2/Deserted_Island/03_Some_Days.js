@@ -2,11 +2,13 @@
 
 function weekdayName2(weekdayNum) {
   var day;
+  var weekday = true;
   var dayModulo = weekdayNum % 7;
 
   switch (dayModulo) {
     case 1:
       day = "Sunday"
+      weekday = false;
       break;
     case 2:
       day = "Monday"
@@ -25,10 +27,16 @@ function weekdayName2(weekdayNum) {
       break;
     case 0:
       day = "Saturday"
+      weekday = false;
       break;
   }
   // Log weekday name
   console.log(day);
+  if (weekday == true) {
+    console.log("Work hard!!!");
+  } else {
+    console.log("Enjoy your day off!!!");
+  }
 }
 
 function someDays() {
