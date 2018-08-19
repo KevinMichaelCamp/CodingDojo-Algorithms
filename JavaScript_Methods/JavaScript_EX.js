@@ -26,3 +26,7 @@ function getRandomInt(min, max) {
 arr = [1,2,3,4,5,6,7,8,9]
 arr2 = arr.slice(-4)
 console.log(arr2);
+
+// Get current day - 0(Sunday) - 6(Saturday)
+var day = new Date().getDay()
+console.log(day);
