@@ -13,22 +13,22 @@ function sigma(num) {
 
 //Test Cases
 console.log("Test Case 1");
-num1 = 3;
+var num1 = 3;
 sigma(num1);
 console.log("*********************");
 console.log("Test Case 2");
-num2 = 5;
+var num2 = 5;
 sigma(num2);
 console.log("*********************");
 console.log("Test Case 3");
-num3 = 1;
+var num3 = 1;
 sigma(num3);
 console.log("*********************");
 console.log("Test Case 4");
-num4 = 100;
+var num4 = 100;
 sigma(num4);
 console.log("*********************");
 console.log("Test Case 5");
-num5 = 1000000;
+var num5 = 1000000;
 sigma(num5);
 console.log("*********************");

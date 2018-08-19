@@ -1,9 +1,10 @@
-// Date on a Deserted Island
+// Date on a Deserted Island - Part 2
 
-function weekdayName(weekdayNum) {
+function weekdayName2(weekdayNum) {
   var day;
+  var dayModulo = weekdayNum % 7;
 
-  switch (weekdayNum) {
+  switch (dayModulo) {
     case 1:
       day = "Sunday"
       break;
@@ -22,7 +23,7 @@ function weekdayName(weekdayNum) {
     case 6:
       day = "Friday"
       break;
-    case 7:
+    case 0:
       day = "Saturday"
       break;
   }
@@ -30,11 +31,9 @@ function weekdayName(weekdayNum) {
   console.log(day);
 }
 
-//Test Day
-weekdayName(1);
-weekdayName(2);
-weekdayName(3);
-weekdayName(4);
-weekdayName(5);
-weekdayName(6);
-weekdayName(7);
+//Test Case
+weekdayName2(8);
+weekdayName2(364);
+weekdayName2(251);
+weekdayName2(18);
+weekdayName2(54);
