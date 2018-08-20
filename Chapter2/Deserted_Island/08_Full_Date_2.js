@@ -9,7 +9,7 @@ function fullDate2(dayNum){
   var month;
   var day;
   var date;
-  var leapYears;
+  var leapYears = 0;
 
 
   // Edge Cases - make sure input is within 1-365 range
@@ -17,9 +17,12 @@ function fullDate2(dayNum){
     return "Day number must be a positive integer."
   }
 
+  // Count leap years
   for(var j = 2020; j <= year; j += 4){
-
+    leapYears ++;
   }
+
+  console.log(leapYears);
 
   // Find Month
   function dayToMonth(dayRem) {
@@ -94,6 +97,10 @@ function fullDate2(dayNum){
     return day;
   }
 
+  // Adjust for leap years
+
+
+  // Log Results
   dayToMonth(dayRem);
   dayName(dayRem);
   console.log(day + ", " + month, date + ",  " + year + ".");
@@ -101,5 +108,6 @@ function fullDate2(dayNum){
 
 //Test Cases
 fullDate2(1);
-fullDate2(2345);
+fullDate2(365);
+fullDate2(1095);
 fullDate2(8475);
