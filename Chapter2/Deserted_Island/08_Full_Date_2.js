@@ -9,13 +9,17 @@ function fullDate2(dayNum){
   var month;
   var day;
   var date;
+  var leapYear = false;
 
   // Edge Cases - make sure input is within 1-365 range
   if (dayNum < 1) {
     return "Day number must be a positive integer."
   }
 
-
+  // Check for leap year
+  if(year % 4 == 0){
+    leapYear = true;
+  }
 
   // Find Month
   function dayToMonth(dayRem) {
