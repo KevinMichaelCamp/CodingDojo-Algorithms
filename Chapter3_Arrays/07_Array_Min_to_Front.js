@@ -20,12 +20,12 @@ function arrayInsertAt(arr, ind, val) {
   arr[ind] = val;
 }
 
-function arrayMinToFront(arr){
+function arrayMinToFront(arr) {
   var min = arr[0];
   var minIndex;
 
-  for(var i = 0; i < arr.length; i ++){
-    if(arr[i] < min){
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < min) {
       min = arr[i]
       minIndex = i;
     }
@@ -38,11 +38,11 @@ function arrayMinToFront(arr){
 
 //Test Cases
 console.log("Test Case 1");
-var arr1 = [4,2,1,3,5];
+var arr1 = [4, 2, 1, 3, 5];
 arrayMinToFront(arr1);
 console.log("********************");
 
-console.log("Test Case 2");   // FIXME: more than one minimum value
-var arr2 = [5,2,2,3,1,1];
+console.log("Test Case 2"); // FIXME: more than one minimum value
+var arr2 = [5, 2, 2, 3, 1, 1];
 arrayMinToFront(arr2);
 console.log("********************");
