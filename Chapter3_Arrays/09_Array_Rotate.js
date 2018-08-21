@@ -6,7 +6,7 @@ Third: Minimize memory usage.  With no new array, handle arrays/shiftBys in the 
 
 Fourth: Minimize the touches of each element. */
 
-function arrayRotate(arr, shiftBy){
+function arrayRotate(arr, shiftBy) {
 
 
 }
