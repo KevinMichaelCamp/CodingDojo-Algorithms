@@ -98,3 +98,6 @@ console.log("33 Sec - 00:00:33");
 var seconds7 = 33;
 clockHandAngles(seconds7);
 console.log("*******************");
+
+var seconds8 = 44820;
+clockHandAngles(seconds8);
