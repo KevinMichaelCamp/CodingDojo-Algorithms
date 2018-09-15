@@ -17,3 +17,16 @@ console.log("Test Case1");
 var arr1 = ["a","b"];
 var arr2 = [1,2];
 arrayConcat(arr1, arr2);
+console.log("*******************")
+
+console.log("Test Case2");
+var arr1 = ["What's","up"];
+var arr2 = ["Buttercup", "?"];
+arrayConcat(arr1, arr2);
+console.log("*******************")
+
+console.log("Test Case3");
+var arr1 = [1,2,3,4,5];
+var arr2 = [6,7,8,9,10];
+arrayConcat(arr1, arr2);
+console.log("*******************")
