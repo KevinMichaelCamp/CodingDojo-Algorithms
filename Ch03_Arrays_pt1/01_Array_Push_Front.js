@@ -2,10 +2,10 @@
 
 function arrayPushFront(arr, val) {
 
-  for (var i = arr.length; i >= 0; i--) {
+  for (var i = arr.length; i > 0; i--) {
     arr[i] = arr[i - 1];
   }
-  
+
   arr[0] = val;
   console.log(arr);
 }

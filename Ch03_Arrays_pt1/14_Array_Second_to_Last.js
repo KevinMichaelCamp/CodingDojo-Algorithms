@@ -2,6 +2,11 @@
 
 function arraySecondToLast(arr) {
 
+  if(arr.length < 2){
+    return null;
+  }
+
+  for(var i = 0; i )
 }
 
 //Test Cases
