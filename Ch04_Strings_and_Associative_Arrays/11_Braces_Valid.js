@@ -1,0 +1,1 @@
+/* Given a sequence of parentheses, braces and brackets, determine whether it is valid.  Example: "W(a{t}s[o(n{ c}o)m]e )h[e{r}e]!" should return true.  While "D(i{a}l[ t]o)n{e" returns false. "A(1)s[0(n]0{t) 0}k" -> false. */
