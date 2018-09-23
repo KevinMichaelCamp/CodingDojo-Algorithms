@@ -1,0 +1,1 @@
+/* Create a function that returns a boolean whether the string is a strict palindrome.  For "a x a" or "racecar", return true.  Do not ignore space, punctuation, and capitalization: if given "Dud" or "oho!", return false. */
