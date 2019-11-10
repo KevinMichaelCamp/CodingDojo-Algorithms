@@ -14,10 +14,13 @@ function sigma(num) {
 //Test Cases
 console.log("Test Case 1");
 var num1 = 3;
+
+console.log("Sigma " + num1);
 sigma(num1);
 console.log("*********************");
 console.log("Test Case 2");
 var num2 = 5;
+console.log("Sigma " + num2);
 sigma(num2);
 console.log("*********************");
 console.log("Test Case 3");
