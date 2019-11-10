@@ -3,7 +3,7 @@
 Second: Re-solve the above problem, but ignore spaces, tabs, returns, capitalization, and punctuation.  Given "Hot puree eruption!", return "tpureeerupt". */
 function logestPalindrome(str) {
     var longest = "";
-    for(var i = 0; i < str.length; i++){
-        
+    for (var i = 0; i < str.length; i++) {
+
     }
 }
