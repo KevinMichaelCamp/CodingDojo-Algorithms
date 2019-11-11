@@ -2,7 +2,5 @@
 // For ['deforestation', 'citation', 'conviction'] return 'tion'.
 
 function commonSuffix(array) {
-    for (var i = 0; i < array.length; i++) {
-        for (var j = )
-    }
+
 }
