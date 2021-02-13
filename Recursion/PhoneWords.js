@@ -23,6 +23,6 @@ function rPhoneWords(nums, pos, name, result, mapping) {
 }
 
 // Test Cases
-console.log(PhoneWords('972'));
-console.log(PhoneWords('975'));
-console.log(PhoneWords('2058'));
+console.table(PhoneWords('972'));
+console.table(PhoneWords('975'));
+console.table(PhoneWords('2058'));
